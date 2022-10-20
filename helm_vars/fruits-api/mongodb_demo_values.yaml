@@ -3,5 +3,6 @@ image:
   pullPolicy: Always
 service:
   type: NodePort
-## TODO add the DB Connection parameters
-dbConnectionParams: {}
+mongoDBConnectionParams: 
+  - name: QUARKUS_MONGODB_CONNECTION_STRING
+    value: <+secrets.getValue("MongoDBAtlasConnectionURI")>
