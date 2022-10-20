@@ -1,0 +1,8 @@
+image:
+  repository: <+artifact.image>
+  pullPolicy: Always
+service:
+  type: NodePort
+mongoDBConnectionParams: 
+  - name: QUARKUS_MONGODB_CONNECTION_STRING
+    value: <+secrets.getValue("MongoDBAtlasConnectionURI")>

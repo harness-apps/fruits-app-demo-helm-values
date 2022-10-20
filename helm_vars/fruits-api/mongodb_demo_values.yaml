@@ -3,5 +3,5 @@ image:
   pullPolicy: Always
 service:
   type: NodePort
-extraSecretNamesForEnvFrom:
- - mongodb-connection-credentials
+## TODO add the DB Connection parameters
+dbConnectionParams: {}
