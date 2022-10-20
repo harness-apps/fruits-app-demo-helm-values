@@ -1,0 +1,5 @@
+image:
+  repository: <+artifact.image>
+  pullPolicy: Always
+service:
+  type: NodePort
