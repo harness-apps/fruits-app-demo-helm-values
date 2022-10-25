@@ -1,0 +1,4 @@
+image:
+  repository: <+artifact.image>
+  pullPolicy: Always
+fruitsApiURL: <+secrets.getValue("FruitsAPIURI")>
