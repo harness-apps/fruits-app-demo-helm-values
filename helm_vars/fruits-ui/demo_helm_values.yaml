@@ -1,4 +1,6 @@
 image:
   repository: <+artifact.image>
   pullPolicy: Always
+service:
+  type: LoadBalancer
 fruitsApiURL: <+secrets.getValue("FruitsAPIURI")>
