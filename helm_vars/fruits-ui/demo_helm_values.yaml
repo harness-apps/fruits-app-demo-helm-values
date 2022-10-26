@@ -3,4 +3,5 @@ image:
   pullPolicy: Always
 service:
   type: LoadBalancer
+  port: 80
 fruitsApiURL: <+secrets.getValue("FruitsAPIURI")>
